@@ -1,11 +1,12 @@
 import React from 'react'
 import {
   Modal,
-  View,
+  StyleSheet,
   Text,
   TouchableOpacity,
   TouchableWithoutFeedback,
-  StyleSheet,
+  View,
+  ViewPropTypes,
 } from 'react-native'
 import PropTypes from 'prop-types'
 
@@ -22,7 +23,7 @@ export default class Menu extends React.PureComponent {
     visible: PropTypes.bool,
     arrowPosition: PropTypes.oneOf(['topRight', 'topLeft', 'topCenter']),
     onVisible: PropTypes.func.isRequired,
-    contentStyle: View.propTypes.style,
+    contentStyle: ViewPropTypes.style,
   }
 
   static defaultProps = {
